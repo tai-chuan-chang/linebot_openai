@@ -41,7 +41,7 @@ app = Flask(__name__)
 
 # 從環境變數讀取
 openai.api_key = os.getenv("OPENAI_API_KEY")
-line_bot_api = LineBotApi(os.getenv("CHANNELeAKXjsayP5rGy5pfk6QFoIFbZtJBTFkeu41eDbtWCaGjy8+0msFjWi5Uels5FpQRn0c3EfeHYmD3UT6LXgRrrjoaUlSvKLqBqOFqfawESVpoEU6765MBWl2tkpn0j2l2dja7yzxO+vf66ARnw3GRfgdB04t89/1O/w1cDnyilFU=_ACCESS_TOKEN"))
+line_bot_api = LineBotApi(os.getenv("CHANNEL_ACCESS_TOKEN"))
 handler1 = WebhookHandler(os.getenv("CHANNEL_SECRET"))
 
 # ============【3】連線到 Chroma - PersistentClient ============ #
