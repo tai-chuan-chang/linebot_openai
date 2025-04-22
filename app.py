@@ -91,7 +91,7 @@ def callback():
     try:
         handler1.handle(body, signature)
     except InvalidSignatureError:
-        abort(200)
+        abort(400)
     return "OK"
 
 
